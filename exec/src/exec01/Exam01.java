@@ -6,16 +6,7 @@ public class Exam01 {
 
 	public static void main(String[] args) {
 		/* 자판기
-		 * 메뉴
-		 * 금액 투입
-		 * 메뉴 선택 - (차액 계산)
-		 * 자판기 이용 여부
-		 * y 
-		 * 	금액 투입
-		 * 	메뉴 선택 - (차액 계산)
-		 * 	자판기 이용 여부
-		 * n
-		 * 	거스름돈 반환
+		 * (배열, 함수 쓰지 않고 배운 것들로만 만들어보기)
 		 */
 		
 
@@ -64,11 +55,11 @@ public class Exam01 {
 		
 		do {
 			System.out.println("======================================================");
-			System.out.printf("1번. 관리자모드%n2번. 자판기 모드%n3번. 자판기이용종료%n원하시는 모드를 선택해주세요 : ");
+			System.out.printf("1번. 관리자모드%n2번. 자판기 모드%n3번. 이용종료%n원하시는 모드를 선택해주세요 : ");
 			mode = sc.nextLine();
 			
 			switch(mode) {
-			case "1" :
+			case "1" :																								//관리자모드
 				System.out.println("------------------------------------------------------");
 				System.out.printf("아이디를 입력해주세요 : ");
 				String id = sc.nextLine();
@@ -85,7 +76,7 @@ public class Exam01 {
 							System.out.printf("원하는 메뉴를 골라주세요(1번~5번) : ");
 							adminMenu = sc.nextLine();
 							
-							switch(adminMenu) {																		//관리자모드
+							switch(adminMenu) {
 							case "1" :																				//재고 현황
 								System.out.println("------------------------재고 현황------------------------");
 								System.out.printf("a. %s(%d원) : %d개%nb. %s(%d원) : %d개%nc. %s(%d원) : %d개%nd. %s(%d원) : %d개%ne. %s(%d원) : %d개%nf. %s(%d원) : %d개%n",
@@ -340,7 +331,7 @@ public class Exam01 {
 									aStore--;
 									
 									System.out.println("======================================================");
-									System.out.printf("고르신 메뉴는 '%s', 금액은 %d원%n현재 남은 잔액은 %d원 입니다.%n", a, aPrice, wallet);
+									System.out.printf("'%s'(이)가 나왔습니다%n금액은 %d원 남은 잔액은 %d원 입니다.%n", a, aPrice, wallet);
 									System.out.println("======================================================");
 									break;
 								} else {
@@ -365,7 +356,7 @@ public class Exam01 {
 									bStore--;
 									
 									System.out.println("======================================================");
-									System.out.printf("고르신 메뉴는 '%s', 금액은 %d원%n현재 남은 잔액은 %d원 입니다.%n", b, bPrice, wallet);
+									System.out.printf("'%s'(이)가 나왔습니다%n금액은 %d원 남은 잔액은 %d원 입니다.%n", b, bPrice, wallet);
 									System.out.println("======================================================");
 									break;
 								} else {
@@ -389,7 +380,7 @@ public class Exam01 {
 									cStore--;
 									
 									System.out.println("======================================================");
-									System.out.printf("고르신 메뉴는 '%s', 금액은 %d원%n현재 남은 잔액은 %d원 입니다.%n", c, cPrice, wallet);
+									System.out.printf("'%s'(이)가 나왔습니다%n금액은 %d원 남은 잔액은 %d원 입니다.%n", c, cPrice, wallet);
 									System.out.println("======================================================");
 									break;
 								} else {
@@ -414,7 +405,7 @@ public class Exam01 {
 									dStore--;
 									
 									System.out.println("======================================================");
-									System.out.printf("고르신 메뉴는 '%s', 금액은 %d원%n현재 남은 잔액은 %d원 입니다.%n", d, dPrice, wallet);
+									System.out.printf("'%s'(이)가 나왔습니다%n금액은 %d원 남은 잔액은 %d원 입니다.%n", d, dPrice, wallet);
 									System.out.println("======================================================");
 									break;
 								} else {
@@ -439,7 +430,7 @@ public class Exam01 {
 									eStore--;
 									
 									System.out.println("======================================================");
-									System.out.printf("고르신 메뉴는 '%s', 금액은 %d원%n현재 남은 잔액은 %d원 입니다.%n", e, ePrice, wallet);
+									System.out.printf("'%s'(이)가 나왔습니다%n금액은 %d원 남은 잔액은 %d원 입니다.%n", e, ePrice, wallet);
 									System.out.println("======================================================");
 									break;
 								} else {
@@ -464,7 +455,7 @@ public class Exam01 {
 									fStore--;
 									
 									System.out.println("======================================================");
-									System.out.printf("고르신 메뉴는 '%s', 금액은 %d원%n현재 남은 잔액은 %d원 입니다.%n", f, fPrice, wallet);
+									System.out.printf("'%s'(이)가 나왔습니다%n금액은 %d원 남은 잔액은 %d원 입니다.%n", f, fPrice, wallet);
 									System.out.println("======================================================");
 									break;
 								} else {
