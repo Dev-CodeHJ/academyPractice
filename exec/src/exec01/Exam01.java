@@ -149,39 +149,51 @@ public class Exam01 {
 									
 									switch(selectMenu) {																//변경할 메뉴 선택 시 선택별 결과값에 대한 switch문
 									case "a" :
-										System.out.println("----------------새로운 메뉴 이름을 적어주세요---------------");
+										System.out.println("----------------새로운 메뉴 이름을 적어주세요----------------");
 										a = sc.nextLine();
 										aStore = 0;
+										System.out.println("----------------재고가 초기화 되었습니다!!!-----------------");
+										System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 										menuChoice = false;
 										break;
 									case "b" :
-										System.out.println("----------------새로운 메뉴 이름을 적어주세요---------------");
+										System.out.println("----------------새로운 메뉴 이름을 적어주세요----------------");
 										b = sc.nextLine();
 										bStore = 0;
+										System.out.println("----------------재고가 초기화 되었습니다!!!-----------------");
+										System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 										menuChoice = false;
 										break;
 									case "c" :
-										System.out.println("----------------새로운 메뉴 이름을 적어주세요---------------");
+										System.out.println("----------------새로운 메뉴 이름을 적어주세요----------------");
 										c = sc.nextLine();
 										cStore = 0;
+										System.out.println("----------------재고가 초기화 되었습니다!!!-----------------");
+										System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 										menuChoice = false;
 										break;
 									case "d" :
-										System.out.println("----------------새로운 메뉴 이름을 적어주세요---------------");
+										System.out.println("----------------새로운 메뉴 이름을 적어주세요----------------");
 										d = sc.nextLine();
 										dStore = 0;
+										System.out.println("----------------재고가 초기화 되었습니다!!!-----------------");
+										System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 										menuChoice = false;
 										break;
 									case "e" :
-										System.out.println("----------------새로운 메뉴 이름을 적어주세요---------------");
+										System.out.println("----------------새로운 메뉴 이름을 적어주세요----------------");
 										e = sc.nextLine();
 										eStore = 0;
+										System.out.println("----------------재고가 초기화 되었습니다!!!-----------------");
+										System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 										menuChoice = false;
 										break;
 									case "f" :
-										System.out.println("----------------새로운 메뉴 이름을 적어주세요---------------");
+										System.out.println("----------------새로운 메뉴 이름을 적어주세요----------------");
 										f = sc.nextLine();
 										fStore = 0;
+										System.out.println("----------------재고가 초기화 되었습니다!!!-----------------");
+										System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 										menuChoice = false;
 										break;
 									default :
