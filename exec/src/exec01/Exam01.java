@@ -61,10 +61,10 @@ public class Exam01 {
 			
 			switch(mode) {
 			case "1" :																								//관리자모드
-				if(error >= 10) {																					//아이디 또는 비밀번호 10회오류시 관리자모드 제한
+				if(error >= 5) {																					//아이디 또는 비밀번호 5회오류시 관리자모드 제한
 					System.out.println("------------------------------------------------------");
 					System.out.printf("아이디 또는 비밀번호 %d회 오류로 관리자모드가 제한됩니다!\n", error);
-					System.out.printf("관리자모드를 이용하고자 하신다면 재시작 해주시기 바랍니다!\n");
+					System.out.printf("관리자모드 이용을 원하시면 재시작 해주시기 바랍니다!\n");
 				} else {
 					System.out.println("------------------------------------------------------");
 					System.out.printf("아이디를 입력해주세요 : ");
@@ -163,6 +163,7 @@ public class Exam01 {
 											System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 											menuChoice = false;
 											break;
+											
 										case "b" :
 											System.out.println("----------------새로운 메뉴 이름을 적어주세요----------------");
 											b = sc.nextLine();
@@ -171,6 +172,7 @@ public class Exam01 {
 											System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 											menuChoice = false;
 											break;
+											
 										case "c" :
 											System.out.println("----------------새로운 메뉴 이름을 적어주세요----------------");
 											c = sc.nextLine();
@@ -179,6 +181,7 @@ public class Exam01 {
 											System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 											menuChoice = false;
 											break;
+											
 										case "d" :
 											System.out.println("----------------새로운 메뉴 이름을 적어주세요----------------");
 											d = sc.nextLine();
@@ -187,6 +190,7 @@ public class Exam01 {
 											System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 											menuChoice = false;
 											break;
+											
 										case "e" :
 											System.out.println("----------------새로운 메뉴 이름을 적어주세요----------------");
 											e = sc.nextLine();
@@ -195,6 +199,7 @@ public class Exam01 {
 											System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 											menuChoice = false;
 											break;
+											
 										case "f" :
 											System.out.println("----------------새로운 메뉴 이름을 적어주세요----------------");
 											f = sc.nextLine();
@@ -203,6 +208,7 @@ public class Exam01 {
 											System.out.println("--------------재고관리탭에서 재고를 입력해주세요---------------");
 											menuChoice = false;
 											break;
+											
 										default :
 											System.out.println("------------------------------------------------------");
 											System.out.println("존재하지 않는 메뉴 번호입니다.");
