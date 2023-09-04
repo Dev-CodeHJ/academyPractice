@@ -84,7 +84,6 @@ public class test11 {
 		for(int i=0; i<numArr.length; i++) {
 			numArr[i] = i;
 		}
-		
 	    for(int i=0;i<100;i++) {
 	    	//2.
 	    	rN = (int)(Math.random()*10);
@@ -92,7 +91,6 @@ public class test11 {
     		numArr[rN] = numArr[i%10];
     		numArr[i%10] = temp;
 	    }
-	    
 	    for(int i=0;i<numArr.length;i++) {
 	    	System.out.printf("numArr[%d] : %d\n", i, numArr[i]);
     	}
@@ -103,10 +101,8 @@ public class test11 {
 		for(int i=0; i<ball.length; i++) {
 			ball[i] = i+1;
 		}
-
 	    int temp1 = 0;
 	    int j = 0;
-
 	    for(int i=0;i<6;i++) {
 	    //2.0~44까지 임의의 값을 얻는다.
 	    //2.배열 0부터 5번째까지 모두 바꾼다.
@@ -115,11 +111,11 @@ public class test11 {
 	    	ball[i] = ball[j];
 	    	ball[j] = temp1;
 	    }
-	      
 	    //3.물음표 내용 채우기
 	    for(int i=0;i<6; i++) {
 	    	System.out.printf("ball[%d]=%d%n",i ,ball[i]);
 	    }
+	    
 	}
 
 }
