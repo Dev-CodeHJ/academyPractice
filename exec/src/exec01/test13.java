@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class test13 {
 
 	public static void main(String[] args) {
+		String name = "홍길동";
+	    int age = 20;
 		//연습문제 5-1
 		// 다음 배열을 선언하거나 초기화한 것 중 잘못된 것을 고르고 그 이유를 설명하시오.
 		// 정답 : d, e
