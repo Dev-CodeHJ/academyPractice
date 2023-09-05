@@ -3,7 +3,7 @@ package exec01;
 public class test11 {
 
 	public static void main(String[] args) {
-		//배열
+		//1차원배열
 		
 		//길이가 4인 배열에 1,2,3,4값 넣어서 출력
 		int[] score = new int[4];
