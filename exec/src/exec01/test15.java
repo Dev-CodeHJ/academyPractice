@@ -10,10 +10,15 @@ public class test15 {
 		};
 		
 		Triangle t = new Triangle(p);
+		Circle c = new Circle(new Point(150,150), 50);
+		Circle cc = new Circle();
+		
 		p[0].x = 50;
 		p[0].y = 50;
 		
 		t.draw();
+		c.draw();
+		cc.draw();
 	}
 
 }
@@ -37,6 +42,24 @@ class Point {
 	}
 	String getXY() {
 		return "("+x+","+y+")";
+	}
+}
+
+class Circle extends Shape {
+	Point center;
+	int r;
+	
+	Circle() {
+		this(new Point(0,0), 100);
+	}
+	
+	Circle(Point center, int r) {
+		this.center = center;
+		this.r = r;
+	}
+	
+	void draw() {
+		System.out.printf("[center=(%d, %d), r=%d, color=%s]\n",center.x,center.y,r,color);
 	}
 }
 
