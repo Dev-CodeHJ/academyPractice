@@ -1,6 +1,4 @@
 package exec01;
-
-import java.util.Arrays;
 //6-7
 //문제6-6에서 작성한 클래스메서드 getDistance()를 인스턴스메서드로 정의하시오.
 class MyPoint {
@@ -54,15 +52,15 @@ public class test14 {
 //		System.out.println("평균:"+s.getAverage());
 		
 		//6-5
-//		Student s = new Student("홍길동",1,1,100,60,76);
-//		System.out.println(s.info());
+		Student s = new Student("홍길동",1,1,100,60,76);
+		System.out.println(s.info());
 		
 		//6-6
 //		System.out.println(getDistance(1,1,2,2));
 		
 		//6-7
-		MyPoint p = new MyPoint(1,1);
-		System.out.println(p.getDistance(2, 2));
+//		MyPoint p = new MyPoint(1,1);
+//		System.out.println(p.getDistance(2, 2));
 	}
 }
 //6-3
@@ -75,29 +73,6 @@ class Student{
 	int kor;
 	int eng;
 	int math;
-	
-	Student(){
-		
-	}
-	
-	public Student(String name, int ban, int no, int kor, int eng, int math) {
-		this.name = name;
-		this.ban = ban;
-		this.no = no;
-		this.kor = kor;
-		this.eng = eng;
-		this.math = math;
-	}
-	
-	//6-5
-	//다음과 같은 실행결과를 얻도록 Student클래스에 생성자와 info()를 추가하시오.
-	//실행결과 : 홍길동,1,1,100,60,76,236,78.7
-	
-	String info() {
-		String s = name+","+ban+","+no+","+kor+","+eng+","+math+","+getTotal()+","+getAverage();
-		return s;
-	}
-	
 	
 	/*6-4
 		문제 6-3에서 정의한 Student클래스에 다음과 같이 정의된 두 개의 메서드getTotal()과 getAverage()를 추가하시오.
@@ -113,7 +88,27 @@ class Student{
 		return kor+eng+math;
 	}
 	float getAverage() {
-		return Math.round(getTotal()/3f*10)/10.0f;
+		return Math.round(getTotal()/3f*10+0.5f)/10.0f;
+	}
+	
+	//6-5
+	//다음과 같은 실행결과를 얻도록 Student클래스에 생성자와 info()를 추가하시오.
+	//실행결과 : 홍길동,1,1,100,60,76,236,78.7
+	Student(){
+		
+	}
+	
+	public Student(String name, int ban, int no, int kor, int eng, int math) {
+		this.name = name;
+		this.ban = ban;
+		this.no = no;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+	}
+	
+	public String info() {
+		return name+","+ban+","+no+","+kor+","+eng+","+math+","+getTotal()+","+getAverage();
 	}
 }
 
@@ -122,21 +117,19 @@ class Student{
 //int num = 카드의 숫자.(1~10사이의 정수)
 //boolean isKwang = 광이면 true, 아니면 false
 class SutdaCard {
-		int num = 1;
-		boolean isKwang = true;
+		int num;
+		boolean isKwang;
 		
-		SutdaCard() {};
+		SutdaCard() {
+			this(1,true);
+		}
 
 		SutdaCard(int num, boolean isKwang) {
 			this.num = num;
 			this.isKwang = isKwang;
-		};
+		}
 		
 		String info(){
-			if(isKwang==true) {
-				return num+"K";
-			} else {
-				return Integer.toString(num);
-			}
+			return num + (isKwang?"K":"");
 		}
 }
