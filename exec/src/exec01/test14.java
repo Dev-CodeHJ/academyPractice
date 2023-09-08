@@ -32,11 +32,11 @@ public class test14 {
 		//6-2
 		//문제 6-1에서 정의한 클래스에 두 개의 생성자와 info()를 추가해서 실행결과와 같은 결과를 얻도록 하시오
 		//실행결과 3 1K
-//		SutdaCard card1 = new SutdaCard(3,false);
-//		SutdaCard card2 = new SutdaCard();
-//		
-//		System.out.println(card1.info());
-//		System.out.println(card2.info());
+		SutdaCard card1 = new SutdaCard(3,false);
+		SutdaCard card2 = new SutdaCard();
+		
+		System.out.println(card1.toString());
+		System.out.println(card2);
 		
 		//6-4
 //		Student s = new Student();
@@ -129,7 +129,11 @@ class SutdaCard {
 			this.isKwang = isKwang;
 		}
 		
-		String info(){
+//		String info(){
+//			return num + (isKwang?"K":"");
+//		}
+		
+		public String toString(){
 			return num + (isKwang?"K":"");
 		}
 }
