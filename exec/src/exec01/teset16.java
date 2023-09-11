@@ -77,6 +77,40 @@ class Tv extends Product {
 	}
 }
 
+//7-10
+class MyTv2 {
+	private boolean isPowerOn;
+	private int channel;
+	private int prevChannel;
+	private int volume;
+	
+	final int MAX_VOLUME = 100;
+	final int MIN_VOLUME = 0;
+	final int MAX_CHANNEL = 100;
+	final int MIN_CHANNEL = 0;
+	
+	public int getChannel() {
+		return channel;
+	}
+	
+	public void setChannel(int channel) {
+		prevChannel = this.channel;
+		this.channel = channel;
+	}
+	
+	public int getVolume() {
+		return volume;
+	}
+	
+	public void setVolume(int volume) {
+		this.volume = volume;
+	}
+	
+	void gotoPrevChannel() {
+		setChannel(prevChannel);
+	}
+}
+
 public class teset16 {
 
 	public static void main(String[] args) {
@@ -95,8 +129,22 @@ public class teset16 {
 //		System.out.println(deck.pick(0));
 		
 		//7-5
-		Tv t = new Tv();
-		System.out.println(t);
+//		Tv t = new Tv();
+//		System.out.println(t);
+		
+		//7-10
+		MyTv2 t = new MyTv2();
+		
+		t.setChannel(10);
+		System.out.println("CH:"+t.getChannel());
+		t.setChannel(20);
+		System.out.println("CH:"+t.getChannel());
+		t.gotoPrevChannel();
+		System.out.println("CH:"+t.getChannel());
+		t.gotoPrevChannel();
+		System.out.println("CH:"+t.getChannel());
+//		t.setVolume(20);
+//		System.out.println("VOL:"+t.getVolume());
 	}
 
 }
