@@ -56,21 +56,47 @@ class SutdaCard {
 	}
 }
 
+//7-5
+class Product {
+	int price;
+	int bonusPoint;
+	
+	Product(){}
+	
+	Product(int price) {
+		this.price = price;
+		bonusPoint = (int)(price/10.0);
+	}
+}
+
+class Tv extends Product {
+	Tv() {}
+	
+	public String toString() {
+		return "Tv";
+	}
+}
+
 public class teset16 {
 
 	public static void main(String[] args) {
-		SutdaDeck deck = new SutdaDeck();
+		//7-1, 7-2
+//		SutdaDeck deck = new SutdaDeck();
+//		
+//		System.out.println(deck.pick(0));
+//		System.out.println(deck.pick());
+//		deck.shuffle();
+//		
+//		for(int i=0;i<deck.cards.length;i++) {
+//			System.out.print(deck.cards[i]+",");
+//		}
+//		
+//		System.out.println();
+//		System.out.println(deck.pick(0));
 		
-		System.out.println(deck.pick(0));
-		System.out.println(deck.pick());
-		deck.shuffle();
-		
-		for(int i=0;i<deck.cards.length;i++) {
-			System.out.print(deck.cards[i]+",");
-		}
-		
-		System.out.println();
-		System.out.println(deck.pick(0));
+		//7-5
+		Tv t = new Tv();
+		System.out.println(t);
 	}
 
 }
