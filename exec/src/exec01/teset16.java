@@ -61,7 +61,7 @@ class Product {
 	int price;
 	int bonusPoint;
 	
-	Product(){}
+//	Product(){}
 	
 	Product(int price) {
 		this.price = price;
@@ -70,7 +70,9 @@ class Product {
 }
 
 class Tv extends Product {
-	Tv() {}
+	Tv() {
+		super(100);
+	}
 	
 	public String toString() {
 		return "Tv";
@@ -129,22 +131,22 @@ public class teset16 {
 //		System.out.println(deck.pick(0));
 		
 		//7-5
-//		Tv t = new Tv();
-//		System.out.println(t);
+		Tv t = new Tv();
+		System.out.println(t);
 		
 		//7-10
-		MyTv2 t = new MyTv2();
-		
-		t.setChannel(10);
-		System.out.println("CH:"+t.getChannel());
-		t.setChannel(20);
-		System.out.println("CH:"+t.getChannel());
-		t.setChannel(30);
-		System.out.println("CH:"+t.getChannel());
-		t.gotoPrevChannel();
-		System.out.println("CH:"+t.getChannel());
-		t.gotoPrevChannel();
-		System.out.println("CH:"+t.getChannel());
+//		MyTv2 t = new MyTv2();
+//		
+//		t.setChannel(10);
+//		System.out.println("CH:"+t.getChannel());
+//		t.setChannel(20);
+//		System.out.println("CH:"+t.getChannel());
+//		t.setChannel(30);
+//		System.out.println("CH:"+t.getChannel());
+//		t.gotoPrevChannel();
+//		System.out.println("CH:"+t.getChannel());
+//		t.gotoPrevChannel();
+//		System.out.println("CH:"+t.getChannel());
 //		t.setVolume(20);
 //		System.out.println("VOL:"+t.getVolume());
 	}
