@@ -139,6 +139,8 @@ public class teset16 {
 		System.out.println("CH:"+t.getChannel());
 		t.setChannel(20);
 		System.out.println("CH:"+t.getChannel());
+		t.setChannel(30);
+		System.out.println("CH:"+t.getChannel());
 		t.gotoPrevChannel();
 		System.out.println("CH:"+t.getChannel());
 		t.gotoPrevChannel();
