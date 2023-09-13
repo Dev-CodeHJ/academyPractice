@@ -69,10 +69,10 @@ public class Exam011 {
 									break;
 									
 								case "2" :																				//재고 변경
-									System.out.println("------------------------재고 변경------------------------");
-									for(int i=0;i<menu.length;i++) {
-										System.out.printf("%d. %s(%d원) : %d개\n",i,menu[i],price[i],store[i]);
-									}
+//										System.out.println("------------------------재고 변경------------------------");
+//										for(int i=0;i<menu.length;i++) {
+//											System.out.printf("%d. %s(%d원) : %d개\n",i,menu[i],price[i],store[i]);
+//										}
 									do {																				//1~4번 외 버튼 입력시 다시 입력
 										System.out.println("------------------------------------------------------");
 										System.out.println("1.재고추가 2.재고차감 3.재고삭제 4.재고직접입력 5.관리자 메뉴");
