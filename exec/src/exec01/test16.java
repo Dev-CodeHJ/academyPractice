@@ -113,7 +113,7 @@ class MyTv2 {
 	}
 }
 
-public class teset16 {
+public class test16 {
 
 	public static void main(String[] args) {
 		//7-1, 7-2

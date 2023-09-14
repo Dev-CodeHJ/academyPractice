@@ -35,7 +35,7 @@ public class test14 {
 		SutdaCard card1 = new SutdaCard(3,false);
 		SutdaCard card2 = new SutdaCard();
 		
-		System.out.println(card1.toString());
+		System.out.println(card1);
 		System.out.println(card2);
 		
 		//6-4
