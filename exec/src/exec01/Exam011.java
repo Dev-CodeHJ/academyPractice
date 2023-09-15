@@ -24,8 +24,8 @@ public class Exam011 {
 		String mode = "";
 		String adminMenu = "";
 
-		String adminId = "aaa";
-		String adminPw = "111";
+		String adminId = "AAA";
+		String adminPw = "123";
 		int error = 0;
 		
 		int inputMoney = 0;
